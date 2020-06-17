@@ -44,9 +44,11 @@ delTodo = (id) => {
   render() {
     return (
       <div className="App">
-         <Header />
+        <div className="container">
+        <Header />
          <AddTodo /> 
-        <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
+        <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>   
+        </div>
       </div>
     );
   }
